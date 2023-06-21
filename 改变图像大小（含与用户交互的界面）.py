@@ -18,8 +18,9 @@ def make_app():
     button_compress=Button(text='compress', command=compress)#点击时执行command，定义函数compress
     button_compress.pack()
     tooltip = Tooltip(button_compress, "压缩到桌面文件夹b")# 创建提示文字并绑定到按钮上
-    Button(text='convert', command=convert).pack()
-    tooltip = Tooltip(button_compress, "png/jpg格式互换到桌面文件夹here")
+    button_convert=Button(text='convert', command=convert)
+    button_convert.pack()
+    tooltip = Tooltip(button_convert, "png/jpg格式互换到桌面文件夹here")
     app.geometry('300x400')
     return app
 
